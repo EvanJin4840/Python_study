@@ -93,3 +93,13 @@ print(MyClass.injected)  # 42
 
 - I/O-bound (waiting for external resources) → Use multithreading
 - CPU-bound (intensive calculations) → Use multiprocessing
+
+### Dunder Methods
+
+Dunder methods (double underscore methods) are special predefined methods with names starting and ending with __ that define how custom objects interact with Python's built-in operations and functions. They're also called "magic methods".
+
+* Key categories:
+- Initialization & representation: __init__ (constructor), __str__ (user-friendly string), __repr__ (developer-friendly representation)
+- Operator overloading: __add__ (+), __sub__ (-), __mul__ (*), __eq__ (==), __lt__ (<) let your objects work with arithmetic and comparison operators
+- Container behavior: __len__ (len()), __getitem__ (indexing obj[i]), __contains__ (in operator) make objects behave like lists/dicts
+- Callable objects: __call__ makes instances callable like functions
