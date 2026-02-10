@@ -103,3 +103,21 @@ Dunder methods (double underscore methods) are special predefined methods with n
 - Operator overloading: __add__ (+), __sub__ (-), __mul__ (*), __eq__ (==), __lt__ (<) let your objects work with arithmetic and comparison operators
 - Container behavior: __len__ (len()), __getitem__ (indexing obj[i]), __contains__ (in operator) make objects behave like lists/dicts
 - Callable objects: __call__ makes instances callable like functions
+
+### Generators and yield
+A generator is a function that uses yield to return values one at a time instead of building a full list in memory. This is great for large datasets or infinite sequences.
+
+Example:
+def count_up():
+    n = 0
+    while True:
+        yield n
+        n += 1
+
+### Comprehensions (list, dict, set)
+A concise way to create collections using a loop‑like syntax in one line.
+
+Examples:
+squares = [x**2 for x in range(10)]
+pairs = {x: x**2 for x in range(5)}
+evens = {x for x in range(10) if x % 2 == 0}
