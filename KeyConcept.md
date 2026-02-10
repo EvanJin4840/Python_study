@@ -106,18 +106,18 @@ Dunder methods (double underscore methods) are special predefined methods with n
 
 ### Generators and yield
 A generator is a function that uses yield to return values one at a time instead of building a full list in memory. This is great for large datasets or infinite sequences.
-
+```python
 Example:
 def count_up():
     n = 0
     while True:
         yield n
         n += 1
-
+```
 ### Comprehensions (list, dict, set)
 A concise way to create collections using a loop‑like syntax in one line.
-
+```python
 Examples:
 squares = [x**2 for x in range(10)]
 pairs = {x: x**2 for x in range(5)}
-evens = {x for x in range(10) if x % 2 == 0}
+evens = {x for x in range(10) if x % 2 == 0}```
