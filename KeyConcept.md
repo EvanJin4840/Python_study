@@ -120,4 +120,16 @@ A concise way to create collections using a loop‑like syntax in one line.
 Examples:
 squares = [x**2 for x in range(10)]
 pairs = {x: x**2 for x in range(5)}
-evens = {x for x in range(10) if x % 2 == 0}```
+evens = {x for x in range(10) if x % 2 == 0}
+```
+
+### *args and **kwargs
+- *args collects extra positional arguments into a tuple; 
+- **kwargs collects extra keyword arguments into a dictionary.
+```python
+Example:
+python
+def func(a, b, *args, **kwargs):
+    print(args)    # tuple of extra positional args
+    print(kwargs)  # dict of extra keyword args
+```
