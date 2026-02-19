@@ -133,3 +133,22 @@ def func(a, b, *args, **kwargs):
     print(args)    # tuple of extra positional args
     print(kwargs)  # dict of extra keyword args
 ```
+
+### Modules and packages
+A .py file is a module; a directory with __init__.py is a package.
+You use import and from ... import ... to reuse code across files.
+Example:
+```python
+python
+import math
+from mypackage.mymodule import my_function
+```
+
+### __name__ == "__main__" idiom
+Code under if __name__ == "__main__": runs only when the file is executed directly, not when imported.
+Example:
+```python
+python
+if __name__ == "__main__":
+    print("This runs only if script is run directly")
+```
